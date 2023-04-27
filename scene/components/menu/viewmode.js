@@ -3,7 +3,7 @@ import { swappedHandednessConfiguration } from "../sceneFeatures/swapHandednessC
 
 export function createViewMode(camera, xr, option, isDefault, maxMapSize, scene) {
     // TopView
-    var endPositionTop = new BABYLON.Vector3(1.0000038016087502, maxMapSize/4 + 5, 0.000999394200753492);
+    var endPositionTop = new BABYLON.Vector3(1.0000038016087502, maxMapSize/10 + 5, 0.000999394200753492);
     var endRotationTop = new BABYLON.Vector3(1.570796, -1.570966904238245, 0);
     // SideView
     var endPositionSide = new BABYLON.Vector3(104.76387393221098, 23.430375376453668, -2.014918226254785);

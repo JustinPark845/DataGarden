@@ -28,9 +28,9 @@ function initializeBabylon(canvas, maxPlantDimensions) {
 		"directional": new BABYLON.DirectionalLight("directionalLight", new BABYLON.Vector3(-100, -200, -100), scene),
 		"hemispheric": new BABYLON.HemisphericLight("hemisphericLight", new BABYLON.Vector3(1, 1, 1), scene),
 	}
-	lights["directional"].intensity = 0.15;
+	lights["directional"].intensity = 0.6;
 	lights["directional"].specular = new BABYLON.Color3.Black();
-	lights["hemispheric"].intensity = 0.25;
+	lights["hemispheric"].intensity = 0.6;
 	lights["hemispheric"].specular = new BABYLON.Color3.Black();
 
 	// Generate Shadows
@@ -68,12 +68,12 @@ async function createEnvironment(scene, lights, camera, maxPlantDimensions, numE
 	ground.position.y = 0;
 	// ground.material = grassMaterial;
 	ground.material = new BABYLON.StandardMaterial("groundMat");
-	ground.material.diffuseColor = new BABYLON.Color3(0, 1.5, 0.05);
+	ground.material.diffuseColor = new BABYLON.Color3(144/255, 186/255, 128/255);
 	ground.enablePointerMoveEvents = true;
 	ground.receiveShadows = true;
 	// Create top ground
 	const topGround = BABYLON.MeshBuilder.CreateGround("ground", {width: maxMapSize, height: maxMapSize}, scene);
-	topGround.position.y = maxMapSize/4;
+	topGround.position.y = maxMapSize/10;
 	topGround.isVisible = false;
 
 	// Create Map Boundary
