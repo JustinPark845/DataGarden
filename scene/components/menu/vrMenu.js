@@ -179,9 +179,9 @@ export function createVRMenu(camera, xr, maxMapSize, maxPlantDimensions, scene) 
 
 function createLegend(fullScreenTexture) {
     // legend
-	var legend = new BABYLON.GUI.Image("legend", "./assets/textures/userstudylegend.jpeg");
+	var legend = new BABYLON.GUI.Image("legend", "./assets/textures/legend_final.jpeg");
 	legend.width = 0.5;
-	legend.height = 0.3;
+	legend.height = 0.8;
 	legend.onPointerUpObservable.add(function() {
 		fullScreenTexture.removeControl(exitLegendButton);
 		fullScreenTexture.removeControl(legend);

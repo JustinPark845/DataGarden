@@ -1,6 +1,6 @@
 export function createLegend(texture) {
     // legend
-	var legend = new BABYLON.GUI.Image("legend", "./assets/textures/legend.jpg");
+	var legend = new BABYLON.GUI.Image("legend", "./assets/textures/legend_final.jpeg");
 	legend.width = 0.5;
 	legend.height = 0.5;
 	legend.onPointerUpObservable.add(function() {
